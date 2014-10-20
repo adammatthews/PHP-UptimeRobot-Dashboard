@@ -7,7 +7,7 @@
 
 Uptime Robot API Scripts
 
-forked from ckdarby/PHP-UptimeRobot
+API forked from ckdarby/PHP-UptimeRobot
 
 */
 require_once('UptimeRobot/config.php');
