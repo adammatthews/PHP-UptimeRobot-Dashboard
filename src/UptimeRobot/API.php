@@ -1,5 +1,14 @@
-<?php
 
+<?php
+/*
+
+@Author: Cory Kennedy-Darby
+
+Uptime Robot API Wrapper
+
+https://github.com/ckdarby
+s
+*/
 namespace UptimeRobot;
 
 class API

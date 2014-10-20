@@ -1,7 +1,7 @@
 {
-    "name": "adammatthews/php-uptimerobot",
-    "description": "PHP Wrapper for UptimeRobot.com API",
-    "homepage": "https://github.com/adammatthews/PHP-UptimeRobot/",
+    "name": "adammatthews/php-uptimerobot-dashboard",
+    "description": "PHP Dashboards UptimeRobot.com API",
+    "homepage": "https://github.com/adammatthews/PHP-UptimeRobot-Dashboard/",
     "type": "library",
     "license": "MIT",
     "authors": [
