@@ -1,4 +1,15 @@
 <?php
+
+/*
+
+@Author: Adam Matthews
+@Date: 20/10/14
+
+Uptime Robot API Scripts
+
+forked from ckdarby/PHP-UptimeRobot
+
+*/
 require_once('UptimeRobot/config.php');
 use UptimeRobot\API;
 
@@ -37,7 +48,7 @@ function getOverall($results){
 
     return round($alltime / $results["total"],2);
 }
-
+//show
 echo getOverall($results)."% Uptime!";
 
 ?>
