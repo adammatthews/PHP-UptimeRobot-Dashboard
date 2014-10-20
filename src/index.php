@@ -24,7 +24,8 @@ try {
     var_dump($api->debug);
 }
 
-
+// Get Overall all time Uptime Stats. 
+function getOverall($results){
 
     $alltime = 0;
 
@@ -34,7 +35,9 @@ try {
         }
     }
 
-    echo round($alltime / $results["total"],2);
+    return round($alltime / $results["total"],2);
+}
 
+echo getOverall($results)."% Uptime!";
 
 ?>
