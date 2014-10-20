@@ -41,9 +41,11 @@ function getOverall($results){
     $alltime = 0;
 
     foreach($results as $x){
-        foreach($x['monitor'] as $y){
-                $alltime += $y['alltimeuptimeratio'];
-        }
+ 		if (is_array($x)){	
+	        foreach($x['monitor'] as $y){
+	                $alltime += $y['alltimeuptimeratio'];
+	        }
+	    }
     }
 
     return round($alltime / $results["total"],2);
