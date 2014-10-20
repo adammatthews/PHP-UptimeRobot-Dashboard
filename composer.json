@@ -1,14 +1,14 @@
 {
-    "name": "ckdarby/php-uptimerobot",
+    "name": "adammatthews/php-uptimerobot",
     "description": "PHP Wrapper for UptimeRobot.com API",
-    "homepage": "https://github.com/ckdarby/PHP-UptimeRobot/",
+    "homepage": "https://github.com/adammatthews/PHP-UptimeRobot/",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Cory Kennedy-Darby",
-            "email": "ckdarby+uptimerobotapi@gmail.com",
-            "homepage": "https://github.com/ckdarby/"
+            "name": "Adam Matthews",
+            "email": "adam@adammatthews.co.uk",
+            "homepage": "https://github.com/adammatthews/"
         }
     ],
     "require": {
