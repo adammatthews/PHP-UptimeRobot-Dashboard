@@ -21,14 +21,14 @@ try {
     //Define parameters for our getMethod request
     $args = [
         'showTimezone' => 1,
-        'customUptimeRatio' => '7-30-45'
+        'customUptimeRatio' => '1-7-30'
     ];
 
     //Makes request to the getMonitor Method
     $results = $api->request('/getMonitors', $args);
 
     //Output json_decoded contents
-     //var_dump($results);
+    //var_dump($results);
 
 } catch (Exception $e) {
     echo $e->getMessage();
@@ -38,18 +38,28 @@ try {
 
 // Get Overall all time Uptime Stats. 
 function getOverall($results){
-
-    $alltime = 0;
+	$day = 0;
+    $week = 0;
+    $month = 0;
 
     foreach($results as $x){
  		if (is_array($x)){	
 	        foreach($x['monitor'] as $y){
-	                $alltime += $y['alltimeuptimeratio'];
+	        	$ratios = explode("-",$y['customuptimeratio']);
+	        	$day += $ratios[0];
+	        	$week += $ratios[1];
+	        	$month += $ratios[2];
 	        }
 	    }
     }
 
-    return round($alltime / $results["total"],2);
+   	$day = round($day / $results["total"],2);
+   	$week = round($week / $results["total"],2);
+   	$month = round($month / $results["total"],2);
+
+   	$output = compact("day", "week", "month");
+
+    return $output;
 }
 
 ?>

@@ -19,8 +19,10 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <?php echo getOverall($results)."% Uptime!"; ?>
+    <?php 
+    $print = getOverall($results); 
+    echo "<p>".$print['day']."</p>";
+    ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
