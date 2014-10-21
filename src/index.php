@@ -7,18 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style type="text/css">
-        body{
-            font-family: "Helvetica Neue", arial, sans-serif
-        }
-        .positive{
-            color: #57A957;
-            text-shadow:0px -1px 0 rgba(0, 0, 0, 0.8);
-        }
-    </style>
-
     <title>Overall Site Uptime Stats</title>
-
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
