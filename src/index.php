@@ -31,7 +31,7 @@
   </head>
   <body>
     <h1>Live Site Uptime Statistics</h1>
-    <div class="well well-black">
+    <div class="well">
         <?php 
         $print = getOverall($results); 
         echo "<h4 class='positive'>".$print['day']."%</h4> <span>(last 24 hours)</span>";
@@ -39,8 +39,6 @@
         echo "<h4 class='positive'>".$print['month']."%</h4> <span> (last 30 days)</span>";
         ?>
     </div>
-
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
