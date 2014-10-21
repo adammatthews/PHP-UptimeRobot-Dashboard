@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '1');
 
 /*
 
@@ -27,7 +28,7 @@ try {
     $results = $api->request('/getMonitors', $args);
 
     //Output json_decoded contents
-     // var_dump($results);
+     //var_dump($results);
 
 } catch (Exception $e) {
     echo $e->getMessage();
@@ -50,7 +51,5 @@ function getOverall($results){
 
     return round($alltime / $results["total"],2);
 }
-//show
-echo getOverall($results)."% Uptime!";
 
 ?>
