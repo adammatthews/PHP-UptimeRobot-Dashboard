@@ -1,7 +1,34 @@
+html{
+    /* This image will be displayed fullscreen */
+    background:url('https://unsplash.imgix.net/reserve/z7R1rjT6RhmZdqWbM5hg_R0001139.jpg?q=75&fm=jpg&s=26fc77c65835d1d8e2bcffb8b91a1b93') no-repeat center center;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+    
+}
+
 body{
+        /* Workaround for some mobile browsers */
+    min-height:100%;
     font-family: "Helvetica Neue", arial, sans-serif
+            color: rgb(255, 255, 255);
 }
 .positive{
     color: #57A957;
     text-shadow:0px -1px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+.well {
+			background-color: rgba(255, 255, 255, 0.9);
+    filter: alpha(opacity=40);
+	-moz-opacity:.40;
+	opacity:.40;
+		}
+
+.field {
+opacity: 1.0;
 }
