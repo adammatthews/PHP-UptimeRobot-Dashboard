@@ -13,6 +13,3 @@ Currently shows: last 24 hours, 7 days, 30 days.
 
 Live Demo at http://uptime.adammatthews.co.uk/
 
-TODO:
-- Allow multiple API Keys (multiple accounts) aggregated into one stat.
-
