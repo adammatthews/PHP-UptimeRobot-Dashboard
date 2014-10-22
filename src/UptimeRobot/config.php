@@ -6,7 +6,7 @@ use UptimeRobot\API;
 
 //Set configuration settings
 $config = [
-    'apiKey' => 'u106857-ed293667cc3b821c95afd9fd',
+    'apiKey' => 'API-KEY',
     'url' => 'http://api.uptimerobot.com'
 ];
 
