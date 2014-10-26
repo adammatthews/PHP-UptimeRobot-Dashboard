@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Overall Site Uptime Stats</title>
+    <title>Platform Uptime Stats</title>
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -28,23 +28,50 @@
     body{
         background: url(<?php echo $selectedBg; ?>) no-repeat center center;
         background-size: cover;
+        /* Backgrounds by https://unsplash.com/ `*/
     }
     </style>
       
   </head>
   <body>
-      <div class="col-md-6 col-md-offset-3 transparent">
+      <div class="row">
+      <div class="col-centered col-lg-6 col-md-6 col-md-offset-3 transparent">
         <div class="field">
-    <h1>Live Site Uptime Statistics</h1>
+            <h1><center>Live Platform Uptime Statistics</center></h1>
         <?php 
+        //var_dump($results);
         $print = getOverall($results); 
-        echo "<h4 class='positive'>".$print['day']."%</h4> <span>(last 24 hours)</span>";
-        echo "<h4 class='positive'>".$print['week']."%</h4> <span> (last 7 days)</span>";
-        echo "<h4 class='positive'>".$print['month']."%</h4> <span> (last 30 days)</span>";
+
+//All Time Ratio
+        echo '<div id="alltime">';
+        echo "<h4 class='positive'>".$print['alltime']."%</h4> 
+            <span class='ratio-title'><p>all time</p></span>";
+        echo '</div>';
+
+// 24 Hour Ratio
+        echo "<h4 class='positive'>".$print['day']."%</h4> 
+        <span class='ratio-title'><p>last 24 hours</p></span>";
+
+// 7 day ratio
+        echo "<h4 class='positive'>".$print['week']."%</h4> 
+        <span class='ratio-title'><p>last 7 days</p></span>";
+
+// 30 day ratio
+        echo "<h4 class='positive'>".$print['month']."%</h4> 
+        <span class='ratio-title'><p>last 30 days</p></span>";
+
         ?>
         </div>
     </div>
-
+</div>
+      
+      <div class="row">
+        <div id="footer" class="col-centered col-lg-6 col-md-6 col-md-offset-3 transparent">
+            <center>Powered by <a href="https://uptimerobot.com/" target="_blank">UptimeRobot.com</a>. Get the code at <a href="https://github.com/adammatthews/PHP-UptimeRobot-Dashboard" target="_blank">GitHub</a>. Backgrounds provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a><br />
+                Website development and hosting by <a href="http://adammathews.co.uk">Adam Matthews</a>
+            </center>
+        </div>
+      </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

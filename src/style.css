@@ -7,10 +7,7 @@ html{
 
     /* The Magic */
     background-size:cover;
-    
 
-
-    
 }
 
 body{
@@ -25,7 +22,6 @@ body{
     font-size: 40px;
 }
 
-
 .transparent {
     background:#7f7f7f;
     background:rgba(255,255,255,0.7);
@@ -34,8 +30,28 @@ body{
     
     margin: 50px;
     padding: 10px;
+    
+    max-width: 600px;
 }
 
 
 .field {
+}
+
+.ratio-title{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.ratio-title p{
+    width: 150px;
+    margin-top: -15px;
+    text-align: right;
+}
+
+#alltime{
+    float: right;
+}
+
+#footer{
+    font-size: 13px;
 }

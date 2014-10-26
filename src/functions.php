@@ -41,7 +41,8 @@ function getOverall($results){
 	$day = 0;
     $week = 0;
     $month = 0;
-
+    $alltime = 0;
+    
     foreach($results as $x){
  		if (is_array($x)){	
 	        foreach($x['monitor'] as $y){
@@ -49,6 +50,7 @@ function getOverall($results){
 	        	$day += $ratios[0];
 	        	$week += $ratios[1];
 	        	$month += $ratios[2];
+                $alltime += $y['alltimeuptimeratio'];
 	        }
 	    }
     }
@@ -56,8 +58,9 @@ function getOverall($results){
    	$day = round($day / $results["total"],2);
    	$week = round($week / $results["total"],2);
    	$month = round($month / $results["total"],2);
+   	$alltime = round($alltime / $results["total"],2);
 
-   	$output = compact("day", "week", "month");
+   	$output = compact("day", "week", "month", "alltime");
 
     return $output;
 }
