@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-      <div class="col-md-6 col-md-offset-3 well">
+      <div class="col-md-6 col-md-offset-3 transparent">
         <div class="field">
     <h1>Live Site Uptime Statistics</h1>
         <?php 

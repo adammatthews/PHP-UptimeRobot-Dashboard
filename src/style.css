@@ -16,19 +16,18 @@ body{
     font-family: "Helvetica Neue", arial, sans-serif
             color: rgb(255, 255, 255);
 }
-.positive{
+.positive {
     color: #57A957;
     text-shadow:0px -1px 0 rgba(0, 0, 0, 0.8);
+    font-size: 40px;
 }
 
 
-.well {
-			background-color: rgba(255, 255, 255, 0.9);
-    filter: alpha(opacity=40);
-	-moz-opacity:.40;
-	opacity:.40;
-		}
+.transparent {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.5);
+}
+
 
 .field {
-opacity: 1.0;
 }
