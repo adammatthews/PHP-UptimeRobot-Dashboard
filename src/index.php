@@ -68,7 +68,7 @@
       <div class="row">
         <div id="footer" class="col-centered col-lg-6 col-md-6 col-md-offset-3 transparent">
             <center>Powered by <a href="https://uptimerobot.com/" target="_blank">UptimeRobot.com</a>. Get the code at <a href="https://github.com/adammatthews/PHP-UptimeRobot-Dashboard" target="_blank">GitHub</a>. Backgrounds provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a><br />
-                Website development and hosting by <a href="http://adammathews.co.uk">Adam Matthews</a>
+                Live Uptime stats for projects by <a href="http://adammathews.co.uk">Adam Matthews</a>
             </center>
         </div>
       </div>
