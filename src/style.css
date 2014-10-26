@@ -8,6 +8,9 @@ html{
     /* The Magic */
     background-size:cover;
     
+
+
+    
 }
 
 body{
@@ -24,8 +27,13 @@ body{
 
 
 .transparent {
-  background:#7f7f7f;
-  background:rgba(255,255,255,0.5);
+    background:#7f7f7f;
+    background:rgba(255,255,255,0.5);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    
+    margin: 50px;
+    padding: 10px;
 }
 
 
