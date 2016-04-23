@@ -1,0 +1,100 @@
+html{
+    /* This image will be displayed fullscreen */
+/*    background:url('https://unsplash.imgix.net/reserve/z7R1rjT6RhmZdqWbM5hg_R0001139.jpg?q=75&fm=jpg&s=26fc77c65835d1d8e2bcffb8b91a1b93') no-repeat center center;*/
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+
+}
+
+body{
+        /* Workaround for some mobile browsers */
+    min-height:100%;
+    font-family: "Open Sans", arial, sans-serif;
+    color: #281E2D;
+}
+
+.logo {
+    max-width:100%;
+    max-height:48px;
+}
+.uptime-logo {
+    display:block;
+    margin:2px 0 0;
+    border:0;
+    text-align:center;
+}
+.uptime-logo img {
+    max-width:100%;
+    max-height:23px;
+}
+.positive {
+    color: #281E2D;
+    font-size: 40px;
+    font-weight: 300;
+}
+a, a:visited {
+    color:inherit;
+    border-bottom:1px dotted #281E2D;
+    text-decoration:none;
+}
+a:hover, a:focus {
+    color:#281E2D;
+}
+small {
+    color: #999;
+}
+
+.transparent {
+    background: #7f7f7f;
+    background: rgba(255,255,255,0.9);
+    box-shadow: rgba(0,0,0,0.5) 0 0 7px,rgba(0,0,0,0.25) 0 0 44px;
+    -webkit-border-radius: 17px 17px 17px 17px;
+    border-radius: 17px 17px 17px 17px;
+    
+    margin: 50px 50px 20px;
+    padding: 10px;
+    
+    max-width: 240px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Open Sans", arial, sans-serif;
+    font-weight: 300;
+    margin: 0 0 7px;
+    padding: 0;
+}
+h1 {
+    margin: 0 0 33px;
+}
+
+.field {
+    padding: 30px 40px;
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+.ratio-title{
+    font-size: 20px;
+    font-family: "Open Sans", arial, sans-serif;
+    margin-top: 0px;
+}
+.ratio-title p{
+    font-family: "Open Sans", arial, sans-serif;
+    width: 200px;
+    margin-top: -15px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#alltime{
+    float: right;
+    margin-top:-11px;
+}
+
+#footer{
+    font-size: 13px;
+}
