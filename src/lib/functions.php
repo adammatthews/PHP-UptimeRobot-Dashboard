@@ -11,7 +11,8 @@ Uptime Robot API Scripts
 API forked from ckdarby/PHP-UptimeRobot
 
 */
-require_once('UptimeRobot/config.php');
+require_once('lib/config.php');
+require_once('lib/API.php');
 use UptimeRobot\API;
 
 try {
@@ -39,7 +40,7 @@ try {
 // Get Overall Uptime Stats for day, week, month and all time. 
 function getOverall($results){
     //blank vars
-	$day = 0;
+    $day = 0;
     $week = 0;
     $month = 0;
     $alltime = 0;
