@@ -19,10 +19,8 @@ try {
     //Initalizes API with config options
     $api = new API($config);
     //Define parameters for our getMethod request
-    $args = [
-        'showTimezone' => 1,
-        'customUptimeRatio' => '1-7-30'
-    ];
+    $args = ['showTimezone' => 1,
+        'customUptimeRatio' => '1-7-30' ];
 
     //Makes request to the getMonitor Method
     $results = $api->request('/getMonitors', $args);
