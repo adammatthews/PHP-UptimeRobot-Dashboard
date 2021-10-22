@@ -15,3 +15,5 @@ Live Demo at http://uptime.adammatthews.co.uk/
 
 TODO:
 - Allow multiple API Keys to merge account uptime into one page.
+
+#hacktoberfest 2021
